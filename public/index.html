@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./js/custom.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <!-- <div class="row">
+        <div class="col text-center">
+          <div class="head">
+            <div class="d-flex">
+              <div>
+                <img src="./image/vnu.png" alt="" width="100" height="100">
+                <img src="./image/uet.png" alt="" width="123" height="123">
+              </div>
+              <div>
+              <h1 class="p-2 bd-highlight">
+                ĐẠI HỌC QUỐC GIA HÀ NỘI <br> TRƯỜNG ĐẠI HỌC CÔNG NGHỆ</h1>
+              </div>
+            </div>
+           
+            
+            <h3>Khoa cơ học kỹ thuật và tự động hóa <br> </h3>
+            <h4>Đề tài nghiên cứu: Hệ thống dây chuyền phân loại sản phẩm theo kích thước</h4>
+            
+            <div>
+              <form>
+                <div class="form-group">
+                  <label for=""></label>
+                  <input style="text-align: center;" type="text" placeholder="Chọn cổng COM">
+                </div>
+                <button type="submit" class="btn btn-danger">Xác nhận</button>
+                
+                <h5> <br> Đếm sản phẩm</h5> 
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+       -->
+      <div class="row text-center">
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-code fa-2x"></i>
+            <h2
+              class="timer count-title count-number"
+              data-to="100"
+              data-speed="1500"
+            ></h2>
+            <p class="count-text">Sản phẩm thấp</p>
+            <p id="result-short" class="result">0</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-coffee fa-2x"></i>
+            <h2
+              class="timer count-title count-number"
+              data-to="1700"
+              data-speed="1500"
+            ></h2>
+            <p class="count-text">Sản phẩm trung bình</p>
+            <p id="result-medium" class="result">0</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="counter">
+            <i class="fa fa-lightbulb-o fa-2x"></i>
+            <h2
+              class="timer count-title count-number"
+              data-to="11900"
+              data-speed="1500"
+            ></h2>
+            <p class="count-text">Sản phẩm cao</p>
+            <p id="result-tall" class="result">0</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="start-button">Start</button>
+      <button class="btn btn-secodary" id="stop-button">Stop</button>
+      <button class="btn btn-success" id="reset-button">Reset</button>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</html>
